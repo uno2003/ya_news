@@ -1,4 +1,4 @@
-gfrom django.contrib import admin
+from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import include, path

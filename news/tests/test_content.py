@@ -25,10 +25,8 @@ class TestHomePage(TestCase):
         )
 
     def test_news_count(self):
-        # Загружаем главную страницу.
         response = self.client.get(self.HOME_URL)
-        # Код ответа не проверяем, его уже проверили в тестах маршрутов.
-        # Получаем список объектов из словаря контекста.
+
         object_list = response.context['object_list']
         # Определяем длину списка.
         news_count = len(object_list)
